@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&display=swap');
+$background_color_main: #212529;
+$font_main: "Montserrat";
+body{
+  padding:0;
+  margin:0;
+  background-color: $background_color_main;
+  font-family: $font_main;
+  color: white;
+
+};
+.navbar_main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0rem 1rem;
+  color: white;
+  .main_contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1rem;
+  }
+}
+
+.pll_algs{
+  padding: 1rem;
+  .cards_container_pll{
+    .flex_container{
+      display: grid;
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+      grid-gap: 1rem;
+      align-items: start;
+      justify-content: space-between;
+      .pll_seperate_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: #343a40;
+        padding: 1rem;
+        height: 15rem;
+        border-radius: 10px;
+        .buttons_container{
+          gap:1rem;
+          display: flex;
+          .add_to_complete{
+            background-color: #4ad66d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 0;
+            margin: 0;
+            border-radius: 7px;
+            font-family: $font_main;
+            &:active{
+                width: 1.95rem;
+                height: 1.95rem;
+            }
+          }
+          .add_to_pause{
+            background-color: #b185db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 0;
+            margin: 0;
+            border-radius: 7px;
+            font-family: $font_main;
+            &:active{
+                width: 1.95rem;
+                height: 1.95rem;
+            }
+          }
+          .add_to_complete_disabled{
+            background-color: #4ad66d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 0;
+            margin: 0;
+            border-radius: 7px;
+            font-family: $font_main;
+          }
+        }
+      }
+    }
+  }
+}
+
+.progress_bar{
+  background-color: #343a40;
+  height: 10px;
+  width: 200px;
+  border-radius: 100rem;
+}
+
+.progress{
+  background-color: greenyellow;
+  height: 10px;
+  width: 10px;
+  max-width: 200px;
+  border-radius: 100rem;
+  position:absolute;
+}
+
+.completed{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #343a40;
+  border: 1px solid #4ad66d;
+  padding: 1rem;
+  height: 15rem;
+  border-radius: 10px;
+}

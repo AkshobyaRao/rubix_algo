@@ -1,0 +1,73 @@
+{
+    "Edges Only":{
+        "Ub":{
+            "main":"R2 U (R U R' U') R' U' (R' U R')",
+            "alt":"y2 (R' U R' U') R' U' (R' U R U) R2",
+            "key":1
+        },
+         "Ua":{
+            "main":"(R U' R U) R U (R U' R' U') R2",
+            "alt":"y2 (R U R' U) (R' U' R2 U') R' U R' U R [U2]",
+            "key":2
+        },
+         "Z":{
+            "main":"(M2' U M2' U) (M' U2) (M2' U2 M') [U2]",
+            "alt":"y' M' U (M2' U M2') U (M' U2 M2) [U']",
+            "key":3
+        },
+         "H":{
+            "main":"(M2' U M2') U2 (M2' U M2')",
+            "alt":"None",
+            "key":4
+        }
+    },
+    "Corners Only":{
+        "Aa":{
+            "main":"x (R' U R') D2 (R U' R') D2 R2 x'",
+            "alt":"y x' R2 D2 (R' U' R) D2 (R' U R') x",
+            "key":5
+        },
+         "Ab":{
+            "main":"x R2' D2 (R U R') D2 (R U' R) x' ",
+            "alt":"y x' (R U' R) D2 (R' U R) D2 R2' x",
+            "key":6
+        },
+         "E":{
+            "main":"x' (R U' R' D) (R U R' D') (R U R' D) (R U' R' D') x",
+            "alt":"None",
+            "key":7
+        }
+    },
+    "Adjacent Corners":{
+        "Ra":{
+            "main":"(R U' R' U') (R U R D) (R' U' R D') (R' U2 R') [U']",
+            "alt":"y' (L U2 L' U2) L F' (L' U' L U) L F L2' [U]",
+            "key":8
+        },
+         "Rb":{
+            "main":"(R' U2 R U2') R' F (R U R' U') R' F' R2 [U']",
+            "alt":"(R' U2 R' D') (R U' R' D) (R U R U') (R' U' R) [U']",
+            "key":9
+        },
+         "Ja":{
+            "main":"(R' U L' U2) (R U' R' U2 R) L [U']",
+            "alt":"y' (L' U' L F) (L' U' L U) L F' L2' U L [U]",
+            "key":10
+        },
+         "Jb":{
+            "main":"(R U R' F') (R U R' U') R' F R2 U' R' [U']",
+            "alt":"None",
+            "key":11
+        },
+         "T":{
+            "main":"(R U R' U') (R' F R2 U') R' U' (R U R' F')",
+            "alt":"None",
+            "key":12
+        },
+        "F":{
+            "main":"(R' U' F')(R U R' U')(R' F R2 U')(R' U' R U)(R' U R)",
+            "alt":"y (R' U2 R' U') y (R' F' R2 U') (R' U R' F) R U' F",
+            "key":13
+        }   
+    }
+}
